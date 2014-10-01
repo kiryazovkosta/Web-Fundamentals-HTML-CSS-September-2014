@@ -1,0 +1,53 @@
+body {
+    background-image:url('../images/background.jpg');
+}
+
+h1 {
+    font-weight: bold;
+    color: #fcd463;
+    font-size: 40px;
+}
+
+img {
+    float: right;
+    margin-top: -90px;
+    margin-left: -200px;
+}
+
+ul.square {
+    list-style-type:square;
+    font-weight: none;
+    color: #fcd463;
+    font-size: 26px;
+}
+
+span.title {
+    color: white;
+}
+
+li.menu-item {
+    margin:10px;
+    padding: 5px;
+}
+
+li > div {
+    width: 95%;
+    background-color: rgba(32, 32, 30, 0.4);
+    border: 2px solid rgb(102, 99, 89);
+    margin:12px;
+    padding: 8px;
+    font-weight: none;
+    color: #F2E5C1;
+    font-size: 18px;
+}
+
+footer > div {
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    color: #fff;
+    font-size: 10px;
+    text-align: right;
+}
