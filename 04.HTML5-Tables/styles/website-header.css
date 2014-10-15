@@ -1,0 +1,56 @@
+body {
+    font-family:Tahoma;
+}
+    
+table{
+	width: 100%;
+	border:none;
+	border-width:0px;
+	background-color: #234465;
+}
+
+table td {
+	padding:0px;
+	font-size:12px;
+	color: white;
+}
+
+table.menuTable {
+	border: none;
+	border-width:0px;
+}
+
+td.logo {
+	width: 200px;
+}
+
+td.right {
+	text-align: right;
+}
+
+	td.right-80 {
+		width: 80px;
+	}
+	
+	td.right-310 {
+		width: 310px;
+	}
+
+.navmenu {
+	float: right;
+}
+
+#navitems li
+ {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+	font-size: 14px;
+ }
+
+.resizedTextbox {
+	width: 300px; 
+	height: 24px; 
+	padding: 1px
+}
+

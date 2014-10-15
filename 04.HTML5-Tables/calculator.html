@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Calculator</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="styles/calculator.css">
+		<script>
+			function calcExpression(param) {
+				var exp = document.getElementById('expression').value;
+				if(param === "C") {
+					exp = "";
+				} else if(param === "=") {
+					exp = eval(exp);
+				} else {
+					exp += param;
+				}
+				
+				document.getElementById('expression').value = exp;
+			}
+		</script>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th colspan="4"><input type="text" id="expression" readonly></th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td><button type="button" name="one" onclick="calcExpression(1)">1</button></td>
+					<td><button type="button" name="two" onclick="calcExpression(2)">2</button></td>
+					<td><button type="button" name="three" onclick="calcExpression(3)">3</button></td>
+					<td><button type="button" name="plus" onclick="calcExpression('+')">+</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" name="four" onclick="calcExpression(4)">4</button></td>
+					<td><button type="button" name="five" onclick="calcExpression(5)">5</button></td>
+					<td><button type="button" name="six" onclick="calcExpression(6)">6</button></td>
+					<td><button type="button" name="minus" onclick="calcExpression('-')">-</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" name="seven" onclick="calcExpression(7)">7</button></td>
+					<td><button type="button" name="eight" onclick="calcExpression(8)">8</button></td>
+					<td><button type="button" name="nine" onclick="calcExpression(9)">9</button></td>
+					<td><button type="button" name="multiply" onclick="calcExpression('*')">*</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" name="clear" onclick="calcExpression('C')">C</button></td>
+					<td><button type="button" name="zero" onclick="calcExpression(0)">0</button></td>
+					<td><button type="button" name="equal" onclick="calcExpression('=')">=</button></td>
+					<td><button type="button" name="divide" onclick="calcExpression('/')">/</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

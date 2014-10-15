@@ -1,0 +1,15 @@
+table {
+	width: 460px;
+}
+
+td {
+	padding: 4px;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+h1, h3 {
+	margin: 0;
+}
